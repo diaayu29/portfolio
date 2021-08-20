@@ -1,0 +1,550 @@
+body {
+  font-family: 'Georama', sans-serif;
+  margin: 0 90px 0 90px;
+  background-color: #E6F8F9;
+  overflow-x: hidden;
+}
+
+body:hover {
+  cursor: default;
+}
+
+#coba {
+  margin-top: 110px;
+  color: #27496D;
+}
+
+.sosmed {
+  position: absolute;
+  left: -.3%;
+  top: 30%;
+  font-size: 55px;
+  color: #27496D;
+
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
+.sosmed a {
+  display: block;
+  opacity: .7;
+}
+
+.sosmed a:hover {
+  opacity: 1;
+  padding-left: 5px;
+}
+
+.sosmed .fab:hover {
+  box-shadow: 5pxx 5px 5px #15273a;
+}
+
+.sosmed a {
+  color: #27496D;
+  transition: all .2s;
+}
+
+h1, h3, h5 {
+  color: #27496D;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #27496D;
+}
+
+.article {
+  background-color: #E6F8F9;
+  border: 2px solid #E6F8F9;
+}
+
+#Send {
+  margin-left: 300px;
+  margin-bottom: 20px;
+}
+
+.nav-item a {
+  color: #27496D;
+  transition: all 1s;
+}
+
+.nav .nav-item .nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #27496D;
+  width: 50%;
+  margin: auto;
+  margin-top: -3px;
+}
+
+.nav .nav-item .nav-link.active::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #27496D;
+  width: 50%;
+  margin: auto;
+  margin-top: -3px;
+}
+
+.nav .nav-item a:hover {
+  color: #27496D;
+  transition: all .2s;
+}
+
+.form-switch {
+  position: absolute;
+  right: 7%;
+  top: 10%;
+}
+
+.form-check-label:hover,
+.form-check-input:hover {
+  cursor: pointer;
+}
+
+.Contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.card-wrap .card-body .card-text {
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+
+.card-wrap .image {
+  width: 800px;
+  height: 100%;
+  position: relative;
+  transition: all .4s;
+}
+
+.card-wrap .image::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition: all.3s;
+}
+
+.card-wrap .image:hover::after {
+  transition: all.3s;
+  background-color: rgba(0,0,0,0.2);
+  cursor: pointer;
+  box-shadow: 0 0 30px #15273a;
+ 
+}
+
+.card-wrap .image:hover {
+  transform: scale(1.02);
+  transition: all .4s;
+}
+
+.layout {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.layout.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  top: 80%;
+}
+
+.hide.active {
+  display: block;
+}
+
+
+
+/* button animation */
+.button-blog {
+  text-decoration: none;
+  display: inline-block;
+  /* margin: auto; */
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  border: none;
+  background-color: #E6F8F9;
+  transition: all .5s;
+  color: #27496D;
+}
+
+.button-blog::after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  bottom: 0;
+  right: 0;
+  border-right: 2px solid #27496D;
+  border-bottom: 2px solid #27496D;
+  transition: all .8s;
+  color: #27496D;
+  text-decoration: none;
+}
+
+.button-blog:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: all .8s;
+
+}
+
+.button-blog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #27496D;
+  border-left: 2px solid #27496D;
+  transition: all .8s;
+}
+
+.button-blog:hover::before {
+  width: 100%;
+  height: 100%;
+  transition: all .8s;
+}
+
+.button-blog:hover {
+  background-color: #27496D;
+  transition: all .5s;
+  transition-delay: .5s;
+  color: #E6F8F9;
+}
+
+.button {
+  position: relative;
+  transition: all .2s ease-out;
+  padding: 10px 30px;
+}
+.button:hover::after {
+  position: absolute;
+  right: 5px;
+  content: '\f061';
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: #d4e6e7;
+}
+
+.button-send {
+  padding: 15px 20px;
+  font-size: 22px;
+}
+
+.card-button {
+  padding: 0px 20px;
+  color: #27496D;
+  transition: all .3s;
+  margin-left: -20px;
+}
+
+.card-button:hover {
+  letter-spacing: 3px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  width: 200px;
+  text-decoration: none;
+  color: #29959b;
+  transition: all .3s;
+}
+
+.card-wrap {
+  margin-top: 100px;
+  margin-right: 50px;
+}
+.button,
+.button-contact,
+.button-send {
+  outline: none;
+  background-color: #27496D;
+  border: none;
+  color: #E6F8F9;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.button-contact,
+.button-send {
+  transition: all .4s;
+}
+
+.button-contact:hover,
+.button-send:hover {
+  color: #E6F8F9;
+  border-bottom: 5px solid #15273a;
+  transition: all .4s;
+  transform: translateY(-5px);
+}
+
+.button-contact:active,
+.button-send:active {
+  transform: translateY(3px);
+  border-bottom: none;
+}
+
+.button-secondary {
+  position: relative;
+  text-decoration: none;
+  color: #27496D;
+  padding: 7px 25px;
+}
+
+.button-secondary:hover {
+  color: #15273a;
+}
+
+.button-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #15273a;
+  border-left: 2px solid #15273a;
+  transition: all 1s;
+}
+
+.button-secondary:hover::before {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+.button-secondary:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+.button-secondary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #15273a;
+  border-right: 2px solid #15273a;
+  transition: all .5s;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Akhir button animation */
+
+@media (max-width: 1245px) {
+  body {
+    margin: 0 25px 0 25px;
+  }
+}
+
+@media(max-width: 1135px) {
+  #Send {
+    margin-left: 250px;
+    padding: 10px;
+  }
+  .Contact .gambar .maps {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 400px;
+  }
+}
+
+@media(max-width: 980px) {
+  .button-send {
+    position: absolute;
+    right: 3%;
+  }
+  .Contact .gambar .maps {
+    margin-top: 100px;
+  }
+}
+
+@media(max-width: 980px) {
+  .button{
+    margin: 50;
+  }
+}
+
+@media(max-width: 980px) {
+  .maps {
+    width: 350px;
+  }
+  .Contact {
+    display: block;
+  }
+}
+
+footer {
+  display: none;
+}
+
+@media(max-width: 776px) {
+  .form-switch,
+  .nav {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+  .fa-bars:hover {
+    cursor: pointer;
+  }
+  .button,
+  .button-secondary {
+    padding: 5px 15px;
+  }
+  .button-send {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 640px) {
+  .Contact {
+    display: block;
+  }
+  #exampleFormControlInput1 {
+    margin-top: 15px;
+  }
+  .sosmed {
+    display: none;
+  }
+  footer {
+    display: block;
+    background-color: #27496D;
+    margin-right: -25px;
+    margin-left: -25px;
+    padding: 10px 10px;
+  }
+  footer .sosmed-footer {
+  
+    position: relative;
+    left: 70%;
+  }
+  footer a {
+    color: #E6F8F9;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  footer a:hover {
+    color: #E6F8F9;
+  }
+  .card-wrap img {
+    margin: auto;
+  }
+  .margin {
+    margin-left: 50px;
+  }
+ .card-wrap {
+   position: relative;
+ }
+
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0 10px;
+  }
+  .Contact .gambar .maps {
+    width: 300px;
+  }
+  .button-send {
+    position: absolute;
+    right: 7%;
+    width: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .Contact .gambar .maps {
+    width: 200px;
+  }
+}
+
+
+
+
+
+
+/* Dark Mode */
+
+body.dark {
+  background-color: #27496D;
+}
+
+#coba.dark, h3.dark, h5.dark,p.dark {
+  color: #E6F8F9;
+}
+
+.button-contact.dark {
+  background-color: #E6F8F9;
+  color: #27496D;
+}
+
+.button-contact .dark:hover {
+  box-shadow: 0 0 50px #27496D;
+}
+
+.nav-item a.dark {
+  color: #E6F8F9;
+}
+
+.nav .nav-item.dark .nav-link:hover::after {
+  border-bottom: 3px solid #E6F8F9;
+}
+
+.nav .nav-item.dark .nav-link.active::after {
+  border-bottom: 3px solid #E6F8F9;
+}
+
+.nav .nav-item.dark a:hover {
+  color: #E6F8F9;
+}
+
+
+
+
+
