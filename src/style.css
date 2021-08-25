@@ -14,6 +14,24 @@ body:hover {
   color: #27496D;
 }
 
+.nav-logo {
+  height: 33px;
+  width: 35px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  background-image: url(logo-light-mode.png);
+  background-size: cover;
+}
+
+.nav-logo.dark {
+  background-image: url(logo-dark-mode.png);
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
 .sosmed {
   position: absolute;
   left: -.3%;

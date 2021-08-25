@@ -34,12 +34,6 @@ for(let i = 0; i < Hide.length; i++) {
   })
 }
 
-for(let i = 0; i < document.getElementsByTagName("h1").length; i++) {
-  switchDark.addEventListener("click", () => {
-    document.getElementsByTagName("h1")[i].classList.toggle("dark")
-  })
-}
-
 switchDark.addEventListener("click", () => {
   if(document.getElementById("checkbox").checked) {
     Body.classList.add("dark")
@@ -63,6 +57,9 @@ switchDark.addEventListener("click", () => {
     }
     for(let i = 0; i < document.getElementsByClassName("button-send").length; i++) {
       document.getElementsByClassName("button-send")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByClassName("nav-logo").length; i++) {
+      document.getElementsByClassName("nav-logo")[i].classList.toggle("dark")
     }
 
   } else {
