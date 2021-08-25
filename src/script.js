@@ -2,8 +2,8 @@ const activate = document.querySelectorAll(".nav-link");
 const viewMore = document.querySelectorAll(".button-secondary");
 const Hide = document.querySelectorAll(".hide");
 const Layout = document.querySelector(".layout");
-// const switchDark = document.querySelector(".form-check");
-// const Body = document.getElementsByTagName("BODY")[0];
+const switchDark = document.querySelector(".form-check");
+const Body = document.getElementsByTagName("BODY")[0];
 // const paragraph = document.getElementsByTagName("p");
 // const H3 = document.getElementsByTagName("h3");
 // const H5 = document.getElementsByTagName("h5");
@@ -19,10 +19,10 @@ const Layout = document.querySelector(".layout");
 
 // document.getElementsByTagName('head')[0].appendChild(style);
 
-
 for(let i = 0; i < activate.length; i++) {
   activate[i].addEventListener("click", () => {
     activate[i].classList.add("active")
+    activate[0].classList.remove("active")
     for(let j = 0; j < activate.length; j++) {
       activate[j].addEventListener("click", () => {
         activate[i].classList.remove("active")
@@ -48,11 +48,46 @@ for(let i = 0; i < Hide.length; i++) {
   })
 }
 
+for(let i = 0; i < document.getElementsByTagName("h1").length; i++) {
+  switchDark.addEventListener("click", () => {
+    document.getElementsByTagName("h1")[i].classList.toggle("dark")
+  })
+}
+
+switchDark.addEventListener("click", () => {
+  if(document.getElementById("checkbox").checked) {
+    Body.classList.add("dark")
+    for(let i = 0; i < document.getElementsByTagName("p").length; i++) {
+      document.getElementsByTagName("p")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByTagName("h1").length; i++) {
+      document.getElementsByTagName("h1")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByTagName("h3").length; i++) {
+      document.getElementsByTagName("h3")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByTagName("h5").length; i++) {
+      document.getElementsByTagName("h5")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByTagName("a").length; i++) {
+      document.getElementsByTagName("a")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByClassName("nav-item").length; i++) {
+      document.getElementsByClassName("nav-item")[i].classList.toggle("dark")
+    }
+    for(let i = 0; i < document.getElementsByClassName("button-send").length; i++) {
+      document.getElementsByClassName("button-send")[i].classList.toggle("dark")
+    }
+
+  } else {
+    Body.classList.remove("dark")
+  }
+  
+})
 
 // for(let i = 0; i < paragraph.length; i++) {
 //   switchDark.addEventListener("click", () => {
 //     Body.classList.toggle("dark")
-//     console.log(typeof switchDark)
 //     paragraph[i].classList.toggle("dark")
 
 //     document.getElementById("coba").classList.toggle("dark")

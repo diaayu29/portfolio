@@ -20,7 +20,6 @@ body:hover {
   top: 30%;
   font-size: 55px;
   color: #27496D;
-
 }
 
 .contact {
@@ -182,12 +181,10 @@ display: -webkit-box;
 }
 
 
-
 /* button animation */
 .button-blog {
   text-decoration: none;
   display: inline-block;
-  /* margin: auto; */
   text-align: center;
   padding: 10px 20px;
   position: relative;
@@ -259,11 +256,6 @@ display: -webkit-box;
   color: #d4e6e7;
 }
 
-.button-send {
-  padding: 15px 20px;
-  font-size: 22px;
-}
-
 .card-button {
   padding: 0px 20px;
   color: #27496D;
@@ -285,6 +277,12 @@ display: -webkit-box;
   margin-top: 100px;
   margin-right: 50px;
 }
+
+.button-send {
+  padding: 15px 20px;
+  font-size: 22px;
+}
+
 .button,
 .button-contact,
 .button-send {
@@ -369,6 +367,10 @@ display: -webkit-box;
 }
 /* Akhir button animation */
 
+footer {
+  display: none;
+}
+
 @media (max-width: 1245px) {
   body {
     margin: 0 25px 0 25px;
@@ -411,10 +413,6 @@ display: -webkit-box;
   .Contact {
     display: block;
   }
-}
-
-footer {
-  display: none;
 }
 
 @media(max-width: 776px) {
@@ -504,10 +502,66 @@ footer {
   }
 }
 
+.titleBlog {
+  text-align: center;
+}
 
+.form-check {
+  position: absolute;
+  right: 5%;
+}
 
+.label:hover {
+  cursor: pointer;
+}
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
 
+.label {
+  width: 40px;
+  height: 21px;
+  background-color: #27496D;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+}
+
+.ball {
+  height: 18px;
+  width: 18px;
+  background-color: #ececec;
+  top: 2px;
+  left: 5%;
+  position: absolute;
+  border-radius: 50%;
+}
+.checkbox:checked + .label{
+  background-color: #E6F8F9;
+  box-shadow: 0 0 20px #C0FEFC;
+}
+
+.checkbox:checked + .label .ball {
+  left: 51%;
+  background-color: #27496D;
+}
+
+.label i {
+  margin-left: 2px;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.label .fa-moon {
+  margin-left: 7px;
+  color: #C3C2BE;
+}
+
+.label .fa-sun {
+  color: #FFCC33;
+}
 
 /* Dark Mode */
 
@@ -515,17 +569,83 @@ body.dark {
   background-color: #27496D;
 }
 
-#coba.dark, h3.dark, h5.dark,p.dark {
+.sosmed a.dark, #coba.dark, h1.dark, h3.dark, h5.dark,p.dark {
   color: #E6F8F9;
 }
 
+.button.dark,
 .button-contact.dark {
   background-color: #E6F8F9;
   color: #27496D;
 }
 
+.button-secondary.dark {
+  color: #E6F8F9;
+  -webkit-box-reflect: below 0.1px linear-gradient(transparent, #0001);
+}
+
+.button-secondary.dark::before {
+  border-top: 2px solid #E6F8F9;
+  border-left: 2px solid #E6F8F9;
+}
+
+.button-secondary.dark::after {
+  border-bottom: 2px solid #E6F8F9;
+  border-right: 2px solid #E6F8F9;
+}
+
+.button-secondary.dark:hover {
+  box-shadow: 0 0 50px #C0FEFC;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+
 .button-contact .dark:hover {
   box-shadow: 0 0 50px #27496D;
+}
+
+
+/* .button-send.dark:hover {
+  border-bottom: 5px solid #27496D;
+  transform: translateY(0);
+}
+
+.button-send.dark:hover::after {
+  border: 2px solid #fff;
+}
+
+/* .button-contact:active, */
+.button-send:active {
+  
+} */
+
+.card-button.dark {
+  color: #E6F8F9;
+}
+
+.button-blog.dark {
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  color: #E6F8F9;
+}
+
+.button-blog::after {
+ border: none;
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg, transparent, rgba(255,255,255,.1),transparent);
+}
+
+.button-blog:hover::after {
+  left: 100%;
+}
+
+.button-blog::before {
+ border: none;
 }
 
 .nav-item a.dark {
