@@ -600,21 +600,24 @@ body.dark {
   transition-delay: .5s;
 }
 
-.button-contact .dark:hover {
+.button-contact.dark:hover {
   box-shadow: 0 0 50px #27496D;
 }
 
-
-/* .button-send.dark:hover {
-  border-bottom: 5px solid #27496D;
-  transform: translateY(0);
+.button-send.dark {
+  background-color: #E6F8F9;
+  color: #27496D;
 }
 
-.button-send.dark:hover::after {
-  border: 2px solid #fff;
-}
 
-/* .button-contact:active, */
+
+.button-contact.dark:hover,
+.button-send.dark:hover {
+  color: #27496D;
+  border-bottom: 5px solid #cadadb;
+  transition: all .4s;
+  transform: translateY(-5px);
+}
 
 
 .card-button.dark {
