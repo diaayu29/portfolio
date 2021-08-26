@@ -18,7 +18,19 @@ for(let i = 0; i < activate.length; i++) {
   });
 }
 
+const menuToggle = document.getElementsByClassName("fa-bars")[0];
+const closeMenuToggle = document.getElementsByClassName("fa-times")[0];
+menuToggle.addEventListener("click", () => {
+  document.getElementsByClassName("nav")[0].classList.add("active");
+  Layout.classList.add("active");
+  document.getElementsByClassName("fa-times")[0].classList.add("active");
+});
 
+closeMenuToggle.addEventListener("click", () => {
+  document.getElementsByClassName("nav")[0].classList.remove("active");
+  Layout.classList.remove("active");
+  document.getElementsByClassName("fa-times")[0].classList.remove("active");
+})
 
 for(let i = 0; i < viewMore.length; i++) {
   viewMore[i].addEventListener("click", () => {
@@ -61,7 +73,6 @@ switchDark.addEventListener("click", () => {
     for(let i = 0; i < document.getElementsByClassName("nav-logo").length; i++) {
       document.getElementsByClassName("nav-logo")[i].classList.toggle("dark")
     }
-
   } else {
     Body.classList.remove("dark")
   }
