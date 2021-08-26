@@ -1,6 +1,5 @@
 body {
   background-color: #27496D;
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -10,7 +9,6 @@ body {
   box-shadow: 5px 2px 10px rgba(0, 0, 0, .4), -5px -2px 10px rgba(0, 0, 0, .4);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  /* display: none; */
   z-index: 999;
 }
 
@@ -205,5 +203,17 @@ span {
   100% {
     transform: scale(1) translateY(-500%) rotate(360deg);
     opacity: 0;
+  }
+}
+
+@media(max-width: 640px) {
+  .wrapper {
+    margin: 10px;
+    padding: 50px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  section {
+    display: none;
   }
 }
