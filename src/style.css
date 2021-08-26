@@ -1,8 +1,12 @@
+* {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Georama', sans-serif;
   margin: 0 90px 0 90px;
   background-color: #E6F8F9;
-  overflow-x: hidden;
+
 }
 
 body:hover {
@@ -425,35 +429,8 @@ footer {
 }
 
 @media(max-width: 776px) {
-  .desktop-file {
-    display: none;
-  }
-  .mobile-file {
-    display: block;
-  }
-  .cardWrap {
-    margin-top: 30px;
-    border: 1px solid #27496D;
-    border-radius: 5px;
-  }
-  .cardWrap .imageBox img{
-    height: 300px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-  }
-  .cardText {
-    padding: 20px;
-  }
-  .button-secondary {
-    display: block;
-    margin: 15px 40px 20px 40px;
-    text-align: center;
-  }
-  .button {
-    display: block;
-    border-radius: 5px;
-    margin: 15px 40px 20px 40px;
-    text-align: center;
+  .formDark {
+    top: 10%;
   }
   .nav {
     display: none;
@@ -516,6 +493,39 @@ footer {
 }
 
 @media(max-width: 640px) {
+  .desktop-file {
+    display: none;
+  }
+  .formDark {
+    top: 15%;
+  }
+  .mobile-file {
+    display: block;
+  }
+  .cardWrap {
+    margin-top: 30px;
+    border: 1px solid #27496D;
+    border-radius: 5px;
+  }
+  .cardWrap .imageBox img{
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  .cardText {
+    padding: 20px;
+  }
+  .button-secondary {
+    display: block;
+    margin: 15px 40px 20px 40px;
+    text-align: center;
+  }
+  .button {
+    display: block;
+    border-radius: 5px;
+    margin: 15px 40px 20px 40px;
+    text-align: center;
+  }
   .Contact {
     display: block;
   }
@@ -553,8 +563,6 @@ footer {
  .card-wrap {
    position: relative;
  }
-
-
 }
 
 @media (max-width: 500px) {
@@ -570,6 +578,7 @@ footer {
     width: 200px;
   }
   .nav.active .nav-item a{
+    overflow: hidden;
     color: #E6F8F9;
     text-align: left;
     font-size: 28px;
@@ -592,13 +601,14 @@ footer {
     z-index: 99;
   }
   .fa-times.active {
-    display: block;
-    top: 2%;
-    right: 47%;
+    top: 23px;
   }
 }
 
 @media (max-width: 350px) {
+  body {
+    margin: 0 5px;
+  }
   .Contact .gambar .maps {
     width: 200px;
   }
@@ -609,10 +619,13 @@ footer {
   text-align: center;
 }
 
-.form-check {
+.formDark {
   position: absolute;
   right: 5%;
+  border-radius: 40px;
+  box-shadow: 0 0 30px #E6F8F9;
 }
+
 
 .label:hover {
   cursor: pointer;
@@ -627,7 +640,6 @@ footer {
   width: 40px;
   height: 21px;
   background-color: #27496D;
-  border-radius: 40px;
   display: flex;
   position: relative;
 }
@@ -643,7 +655,6 @@ footer {
 }
 .checkbox:checked + .label{
   background-color: #E6F8F9;
-  box-shadow: 0 0 20px #C0FEFC;
 }
 
 .checkbox:checked + .label .ball {
@@ -719,7 +730,6 @@ body.dark {
   transition: all .4s;
   transform: translateY(-5px);
 }
-
 
 .card-button.dark {
   color: #E6F8F9;

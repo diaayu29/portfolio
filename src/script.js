@@ -2,7 +2,7 @@ const activate = document.querySelectorAll(".nav-link");
 const viewMore = document.querySelectorAll(".button-secondary");
 const Hide = document.querySelectorAll(".hide");
 const Layout = document.querySelector(".layout");
-const switchDark = document.querySelector(".form-check");
+const switchDark = document.querySelector(".formDark");
 const Body = document.getElementsByTagName("BODY")[0];
 
 for(let i = 0; i < activate.length; i++) {
