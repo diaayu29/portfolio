@@ -156,11 +156,6 @@ display: -webkit-box;
   box-shadow: 0 0 30px #15273a;
 }
 
-.card-wrap .image:hover {
-  transform: scale(1.02);
-  transition: all .4s;
-}
-
 .layout {
   display: none;
   position: fixed;

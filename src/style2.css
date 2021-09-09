@@ -41,6 +41,7 @@ a:hover {
 
 h1,h2,p {
   color: #E6F8F9;
+  overflow: hidden;
 }
 
 .carousel-control-next-icon,
@@ -139,27 +140,6 @@ h1,h2,p {
   width: 2px;
   height: 10px;
   background-color: #336294;
-}
-
-.button:hover span:nth-child(1) {
-  background-color: #C0FEFC;
-  height: 100%;
-  transition: all 1s;
-}
-.button:hover span:nth-child(2) {
-  background-color: #C0FEFC;
-  width: 100%;
-  transition: all 1s;
-}
-.button:hover span:nth-child(3) {
-  background-color: #C0FEFC;
-  height: 100%;
-  transition: all 1s;
-}
-.button:hover span:nth-child(4) {
-  background-color: #C0FEFC;
-  width: 100%;
-  transition: all 1s;
 }
 
 .button span:nth-child(2) {
